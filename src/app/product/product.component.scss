@@ -1,0 +1,13 @@
+img {
+    width: 30%;
+    padding: 3%;
+}
+.popis {
+    text-align: left;
+    display: flex;
+}
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}

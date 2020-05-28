@@ -1,0 +1,12 @@
+.container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card {
+    cursor: pointer;
+    border-color: black;
+    margin: 5%;
+    padding: 5%;
+}

@@ -11,7 +11,8 @@ import {Product} from '../models/Product.model';
   styleUrls: ['./category.component.scss']
 })
 export class CategoryComponent implements OnInit {
-
+  
+  p: number = 1;
   public categories: Categoryinfo;
   public prodct: Product[];
 
@@ -19,7 +20,7 @@ export class CategoryComponent implements OnInit {
   }
 
   Link(id) {
-    this.router.navigate(['/products'], {queryParams: {id}});
+    this.router.navigate(['/product'], {queryParams: {id}});
   }
   ngOnInit(): void {
     this.route.queryParams

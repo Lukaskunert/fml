@@ -1,11 +1,13 @@
 <h1>{{categories.category.name}}</h1>
+<div class="container">
     <div class="card"  *ngFor="let product of prodct" (click) = "Link(product.id)" style="width: 18rem;">
       <img class="card-img-top" [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].miniaturePath" alt="Card image cap">
-      <div class="card-body">
+      <div class="card-body" *ngFor="let product of prodct | paginate: {itemsPerPage: 1, currentPage: p}; let i = index">
         <h5 class="card-title">{{product.title}}</h5>
         <h5 class="card-price">{{product.price/100}}Kc</h5>
-        <p class="card-text">{{product.description}}</p>
-        <a routerLink="/products" (click) = "Link(product.id)" class="btn btn-primary">Jit nekam</a>
+        <p class="card-text"></p>
+        <a routerLink="/product" (click)="Link(product.id)" class="btn btn-primary">Jit nekam</a>
       </div>
     </div>
-
+  </div>
+  <pagination-controls (pageChange)="p = $event"></pagination-controls>

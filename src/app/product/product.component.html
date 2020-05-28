@@ -1,1 +1,8 @@
-<p>product works!</p>
+<div class="container">
+    <h1>{{product.title}}</h1>
+    <img class="card-img-top" [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].miniaturePath" alt="Card image cap">
+  
+    <a id="details">{{product.parameters}}</a>
+    <a id="rating"></a>
+    <a id="popis" style="">{{product.description}}</a>
+</div>

@@ -5,4 +5,8 @@
     <a id="details">{{product.parameters}}</a>
     <a id="rating"></a>
     <a id="popis" style="">{{product.description}}</a>
+    <button class="plus" (click)="plus()">+</button>
+    <input type="number" value="{{pocet}}">
+    <button class="minus" (click)="minus()">-</button>
+    <button class="kosikbutton" (click)="addToKosik()">Pridat</button>
 </div>

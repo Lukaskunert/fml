@@ -2,7 +2,7 @@
 <div class="container">
     <div class="card"  *ngFor="let product of prodct" (click) = "Link(product.id)" style="width: 18rem;">
       <img class="card-img-top" [src]="'http://kodytek.cz:8080/rest-api/' + product.images[0].miniaturePath" alt="Card image cap">
-      <div class="card-body" *ngFor="let product of prodct | paginate: {itemsPerPage: 1, currentPage: p}; let i = index">
+      <div class="card-body" *ngFor="let product of prodct | paginate: {itemsPerPage: 1, currentPage: p};  let i = index">
         <h5 class="card-title">{{product.title}}</h5>
         <h5 class="card-price">{{product.price/100}}Kc</h5>
         <p class="card-text"></p>

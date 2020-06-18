@@ -7,13 +7,15 @@ import { CategoryComponent } from './category/category.component';
 import { ProductComponent } from './product/product.component';
 import { HomeComponent } from './home/home.component';
 import {NgxPaginationModule} from 'ngx-pagination';
+import { KosikComponent } from './kosik/kosik.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     CategoryComponent,
     ProductComponent,
-    HomeComponent
+    HomeComponent,
+    KosikComponent
   ],
   imports: [
     BrowserModule,
